@@ -1,0 +1,128 @@
+/* ==============================
+   VARIABLES DE COLOR (branding)
+============================== */
+
+:root {
+  --primary: #1b3c59; /* Azul médico profundo elegante */
+  --primary-dark: #0e2233; /* Azul más sobrio */
+  --secondary: #2a6f97; /* Azul acento moderno */
+  --whatsapp: #1faf5a; /* Verde más discreto */
+  --light-bg: #f4f7fa; /* Fondo premium gris muy claro */
+  --text-main: #2d3748; /* Gris elegante */
+}
+
+/* ==============================
+   ESTILO GENERAL
+============================== */
+
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--light-bg);
+}
+
+/* ==============================
+   TITULOS
+============================== */
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.5px;
+}
+
+/* ==============================
+   BOTONES PERSONALIZADOS
+============================== */
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 14px;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(27, 60, 89, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(14, 34, 51, 0.25);
+}
+
+.btn-whatsapp {
+  background-color: var(--whatsapp);
+  color: white;
+  border-radius: 14px;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(31, 175, 90, 0.15);
+}
+
+.btn-whatsapp:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   TARJETAS (SERVICIOS)
+============================== */
+
+.card-service {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ==============================
+   WHATSAPP FLOTANTE
+============================== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--secondary);
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #059669;
+}
+
+/* ==============================
+   SECCIONES
+============================== */
+
+.section-spacing {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* ==============================
+   MAPA RESPONSIVE
+============================== */
+
+iframe {
+  border-radius: 16px;
+}
+
+/* ==============================
+   RESPONSIVE AJUSTES
+============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
